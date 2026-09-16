@@ -1,0 +1,11 @@
+x = -12:0.25:12;
+y = x;
+[X,Y] = meshgrid(x,y);
+R = sqrt(X.^2 + Y.^2);
+Z = 8*sin(1.5*R)./(R + 1);
+mesh(X,Y,Z);
+grid on;
+xlabel('Sumbu X');
+ylabel('Sumbu Y');
+zlabel('Sumbu Z');
+title('Grafik Gelombang Melingkar 3D');
